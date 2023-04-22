@@ -30,6 +30,8 @@ body {
     position: absolute;
     width: 1000px;
     animation: meteoros-animation 20s infinite linear;
+    right: 0px;
+    bottom: 0px;
 }
 
 #meteoros2 {
