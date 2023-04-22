@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.game-board {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #4caf50;
+    margin: 0px auto;
+    overflow: hidden;
+    background: linear-gradient(#eb8787, #ffe0e0);
+}
+
+.cactus {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    animation: cactus-animation 3s infinite linear;
+}
+
+.meteoros {
+    position: absolute;
+    width: 1000px;
+    animation: meteoros-animation 20s infinite linear;
+}
+
+#meteoros2 {
+    position: absolute;
+    width: 700px;
+    animation: meteoros-animation 24s infinite linear;
+}
+
+#meteoros3 {
+    position: absolute;
+    width: 600px;
+    animation: meteoros-animation 26s infinite linear;
+}
+
+.dinossauro {
+    position: absolute;
+    width: 120px;
+    bottom: -12px;
+}
+
+.jump {
+    animation: pulo-animation 500ms ease-out;
+}
+
+@keyframes cactus-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pulo-animation {
+    0% {
+        bottom: 0px;
+    } 
+
+    40% {
+        bottom: 150px;
+    }
+
+    50% {
+        bottom: 150px;
+    }
+
+    60% {
+        bottom: 150px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes meteoros-animation {
+    0% {
+        bottom: 250px;
+    } 
+
+    40% {
+        bottom: 50px;
+    }
+
+    100% {
+        bottom: -150px;
+    }
+
+    from {
+        right: -500px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
