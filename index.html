@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino Jump</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./main.css">
-    
+    <title>Dino Jump</title>
 </head>
 <body>
-    <div class="game-board">
-        <img class="meteoros" src="./imagens/meteoros.png" alt="Meteoros caindo do céu">
-        <img class="" id="meteoros2" src="./imagens/meteoros.png" alt="Meteoros caindo do céu">
-        <img class="" id="meteoros3" src="./imagens/meteoros.png" alt="Meteoros caindo do céu">
-        <img class="dinossauro" src="./imagens/dinoteste.webp" alt="Dinossarou">
-        <img class="cactus" src="./imagens/cactus.png" alt="Cacto">
+    <form class="menuStart">
+        <button class="btnStart" type="submit">Start</button>
+    </form>
+    <div class="gameContainer disabled">
+        <div class="game-board">
+            <img class="meteoros waiting" src="./imagens/meteoros.png" alt="Meteoros caindo do céu">
+            <img class="meteoros waiting" id="meteoros2" src="./imagens/meteoros.png" alt="Meteoros caindo do céu">
+            <img class="meteoros waiting" id="meteoros3" src="./imagens/meteoros.png" alt="Meteoros caindo do céu">
+            <img class="dinossauro" src="./imagens/dinoteste.webp" alt="Dinossauro">
+            <img class="cactus waiting" src="./imagens/cactus.png" alt="Cacto">
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

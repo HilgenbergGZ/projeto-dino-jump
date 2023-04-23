@@ -9,6 +9,48 @@ body {
     background-color: black;
 }
 
+/*Aguardando o comando de Start do usuário*/
+.cactus.waiting {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    margin-left: 500px;
+    animation: none;
+}
+
+.meteoros.waiting {
+    position: absolute;
+    animation: none;
+    display: none;
+}
+
+/*Botão de start*/
+.btnStart {
+    position: absolute;
+    color: white;
+    background-color: red;
+    margin-left: 600px;
+    margin-top: 250px;
+    font-size: 40px;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 2;
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnStart:hover {
+    background-color: #ff000065;
+}
+
+.gameContainer.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+/*#############################*/
+
 .game-board {
     position: relative;
     width: 100%;
@@ -17,6 +59,7 @@ body {
     margin: 0px auto;
     overflow: hidden;
     background: linear-gradient(#eb8787, #ffe0e0);
+    z-index: 1;
 }
 
 .cactus {
